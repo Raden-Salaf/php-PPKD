@@ -13,7 +13,7 @@ if (isset($_POST['tampil'])) {
 
 // Rumus Balok
 if (isset($_POST['tampil_balok'])) {
-    
+
     // $angka = $_POST['angka'];
     $panjang = $_POST['panjang'];
     $lebar = $_POST['lebar'];
@@ -30,7 +30,7 @@ if (isset($_POST['tampil_limas_segiempat'])) {
     $tinggi_limas_segiempat = $_POST['tinggi_limas_segiempat'];
     $sisi = $_POST['sisi_limas_segiempat'];
     $luas_alas = pow($_POST['sisi_limas_segiempat'], 2);
-    $volume_limas_segiempat = (1/3) * $luas_alas * $tinggi_limas_segiempat;
+    $volume_limas_segiempat = (1 / 3) * $luas_alas * $tinggi_limas_segiempat;
 
     echo "ini hasil perhitungan volume Limas Segi Empat :" . $volume_limas_segiempat . "<br>";
 };
@@ -38,7 +38,7 @@ if (isset($_POST['tampil_limas_segiempat'])) {
 // Rumus Bola
 if (isset($_POST['tampil_bola'])) {
     $jari_jari = $_POST['jari_jari'];
-    $volume_bola = (4/3) * PI() * pow($jari_jari, 3);
+    $volume_bola = (4 / 3) * PI() * pow($jari_jari, 3);
     $luas_permukaan_bola = 4 * M_PI * pow($jari_jari, 2);
 
     echo "ini hasil perhitungan volume Bola :" . $volume_bola . "<br>";
@@ -62,7 +62,7 @@ if (isset($_POST['tampil_bola'])) {
     <h1>Ini menghitung rumus KUBUS</h1>
     <form action="" method="post">
         <label for="" name="kubus">cari volumenya</label><br>
-        <input type="number" name="kubus" id="" placeholder="rumusnya S³"><br> <br>
+        <input type="number" step="any" name="kubus" id="" placeholder="rumusnya S³"><br> <br>
         <!-- <label for="">angka</label><br>
         <input type="number" name="angka" id=""><br> <br> -->
         <!-- <label for="">Sisi 2</label>
@@ -94,7 +94,7 @@ if (isset($_POST['tampil_bola'])) {
         <label for="number">Tinggi</label><br><br>
         <input type="text" name="tinggi_limas_segiempat" id=""><br><br>
         <button type="submit" name="tampil_limas_segiempat">menghitung rumus limas segi empat</button>
-        
+
     </form>
 
     <h1>Menghitung Bola</h1>
